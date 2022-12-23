@@ -13,7 +13,7 @@ body {
     justify-content: center;
     align-items: center;
     margin: 0 auto;
-    margin-top: 4em;
+    margin-top: 1em;
     display: flex;
     flex-direction: column;
     gap: 0.5em;
@@ -27,7 +27,7 @@ body {
 .App .grid .row .card {
     background: #fff;
     width: 12em;
-    height: 8.5em;
+    height: 8.3em;
     align-items: center;
     justify-content: center;
     display: flex;
@@ -44,9 +44,39 @@ body {
 }
 
 .App .points {
+    text-align: center;
     color: #65FE;
-    font-size: 30px;
-    position: absolute;
-    right: 1em;
-    top: 1px;
+    font-size: 3.5em;
+}
+
+@media (max-width: 720px){
+    .App .points {
+        margin-top: 2em;
+    }
+
+    .App .grid {
+        margin-top: 8em;
+    }
+
+    .App .grid .row .card {
+        width: 7.5em;
+        height: 8.5em;
+        margin-bottom: 3.5em;
+    }
+}
+
+@media (max-width: 490px){
+    .App .points {
+        font-size: 2.8em;
+    }
+
+    .App .grid {
+        margin-top: 5em;
+    }
+
+    .App .grid .row .card {
+        width: 5.5em;
+        height: 6.5em;
+        margin-bottom: 1em;
+    }
 }

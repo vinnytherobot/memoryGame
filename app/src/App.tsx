@@ -1,6 +1,6 @@
 import { useState } from 'react';
 
-interface TCell {
+interface DataList {
   row: number;
   column: number;
 }
@@ -18,7 +18,7 @@ function App() {
     new Array(grid.length).fill("").map(() => new Array(grid[0].length).fill(false))
   );
 
-  const [firstItem, setFirstItem] = useState<TCell>()
+  const [firstItem, setFirstItem] = useState<DataList>()
 
   function showNumber(row: number, column: number){
     if(isReveled[row][column]){
@@ -52,7 +52,7 @@ function App() {
 
   return(
     <div className="App">
-      <h1 className="points">{points === 6 ? "You Won" : `Points: ${points}`}</h1>
+      <h1 className="points">{points === 6 ? "YOU WON" : `POINTS: ${points}`}</h1>
       <div className="grid">
         {grid.map((row, rowIndex) => (
           <div className="row" key={rowIndex}>
