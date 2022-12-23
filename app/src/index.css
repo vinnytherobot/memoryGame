@@ -1,0 +1,52 @@
+* {
+    margin: 0;
+    padding: 0;
+    box-sizing: border-box;
+    font-family: "Poppins", sans-serif;
+}
+
+body {
+    background: #242526;
+}
+
+.App .grid {
+    justify-content: center;
+    align-items: center;
+    margin: 0 auto;
+    margin-top: 4em;
+    display: flex;
+    flex-direction: column;
+    gap: 0.5em;
+}
+
+.App .grid .row {
+    display: flex;
+    gap: 1.5em;
+}
+
+.App .grid .row .card {
+    background: #fff;
+    width: 12em;
+    height: 8.5em;
+    align-items: center;
+    justify-content: center;
+    display: flex;
+    border-radius: 1em;
+    color: #65FE;
+    cursor: pointer;
+    font-weight: bold;
+    font-size: 1.2em;
+}
+
+.App .grid .row .card:hover {
+    background: gray;
+    color: #fff;
+}
+
+.App .points {
+    color: #65FE;
+    font-size: 30px;
+    position: absolute;
+    right: 1em;
+    top: 1px;
+}
